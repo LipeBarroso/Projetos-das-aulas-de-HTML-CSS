@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+    <link rel="shortcut icon" href="iconhtml.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <hr>
+    <h2>Código Fonte e Pré Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code>, é escrito em línguagem JavaScript usando a tag <strong>CODE</strong>.</p>
+    <pre>
+        <code>
+    <mark>
+num = int (input('Digiteum numero'))
+if num % 2 == 0:
+    print (f' O numero {num} é PAR')
+else
+    print (f'O numero {num} é IMPAR')
+print ('Fim do programa')
+    </mark>
+        </code>
+    </pre>
+    <p>Para essa indentação observada acima, usamos a tag <strong>PRE</strong>, para que o texto fique na forma de um codigo em JavaScript. <br>
+    Dentro dessa tag sera respeitado os espaçamentos que usamos onde desenvolvemos o site como por exemplo no Visual Code. </p>
+    <h2>Citações Simples</h2>
+    <p>Como diria um pai de um amigo, <q>O computador é um burro muito rápido.</q> <br>
+    Nessa frase acima usamos a tag <strong>Q</strong> para adicioar as aspas (""), onde está mostrando a fala de uma pessoa.</p>
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/EGp9DgAAQBAJ?hl=pt-BR&gbpv=0">
+        As diferenças entre elementos inline e um bloco de texto é importante.Os elementos de HTML neste capítolo descrevem os blocos de texto.
+    </blockquote>
+    <p>Nessa frase acima usamos a tag <strong>BLOCKQUOTE</strong>, ela e uma tag que desloca uma parte de um texto horizontalmente sendo uma citação de uma pessoa ou autor. <br> 
+    E também usamos um parâmetro dentro da tag <strong>BLOCKQUOTE</strong> que foi a <strong>CITE</strong> como por exemplo:</p>
+    <pre>
+        <code>
+            &lt;blockquote<mark>cite="(link do livro)"</mark>&gt;
+        </code>
+    </pre>
+    <p>Esse parâmetro tem como objetivo citar o livro, e os mecanismos de busca vai indentificar que essa frase está referente a este livro.</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. <br>
+    Usamos na frase acima a tag <strong>ABBR</strong>, essa tag faz com que o visitante do site veja o significado das palavras abreviadas passando o mouse em cima delas.</p>
+
+</body>
+</html>

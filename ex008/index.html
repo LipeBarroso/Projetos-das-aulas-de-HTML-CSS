@@ -13,7 +13,7 @@
     <h2>Listas Ordenadas</h2>
     <p>Listas ordenadas são aquelas que a ordem faz diferença, essa lista é reprensentada pela tag <strong>OL</strong>.</p> 
     <P>E dentro da tag <strong>OL</strong> temos os itens da lista representado pela tag <strong>LI</strong>, como por exemplo:</P>
-    <p>Tarefas do dia a dia:</p>
+    <h3>Tarefas do dia a dia:</h3>
     <ol>
         <li>Acordar</li>
         <li>Tomar café</li>
@@ -28,7 +28,7 @@
     <P><strong><code>&lt;ol type="1"&gt;</code></strong></P>
     <P>Esse parâmetro te dar a opção de sequencia da lista em 1,A,a,I,i.</P>
     <p>Temos também a opção de comecar na sua sequencia desejada como por exemplo:</p>
-    <p>Tarefas do dia a dia:</p>
+    <h3>Tarefas do dia a dia:</h3>
     <ol start="4">
         <li>Acordar</li>
         <li>Tomar café</li>
@@ -42,7 +42,7 @@
     <P>Isso acontece quando adicionamos a tag <strong>START</strong> dentro da tag <strong>OL</strong> exemplo:<strong><code>&lt;ol start="4"&gt;</code></strong>.</P>
     <h2>Listas Não Ordenadas</h2>
     <p>Listas não ordenadas são listas onde a sequencia não faz sentido ou seja não precisa enumerar, essa lista é representada pela tag <strong>UL</strong>.</p>
-    <p>Coisas que eu gosto de fazer:</p>
+    <h3>Coisas que eu gosto de fazer:</h3>
     <Ul type="disc"> <!--Disc, Circle, Square-->
         <li>Jogar bola</li>
         <li>Jogar Games</li>
@@ -50,5 +50,118 @@
         <li>Ver amigos</li>
         <li>Cozinhar</li>   
     </Ul>
+    <h2>Juntando Listas</h2>
+    <h3>Minhas Linguagens Favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="A">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="A">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <p>Na lista acima, usamos o tipo de lista ordenada dentro de outra lista ordenada com a tag <strong>OL</strong>, depois colocamos a tag <strong>LI</strong>.</p> 
+    <p>Dentro de ambas também adicionamos o paramentro <strong>TYPE</strong> como por exemplo:</p>
+    <pre>
+     <code>
+        &lt;ol&gt;
+            &lt;li&gt;&lt;/li&gt;
+            &lt;ol type="A"&gt;
+                &lt;li&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;/li&gt;   
+            &lt;/ol&gt;
+            &lt;li&gt;&lt;/li&gt;
+            &lt;ol type="A"&gt;
+                &lt;li&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;/li&gt;
+            &lt;/ol&gt;    
+        &lt;/ol&gt;
+     </code>
+    </pre>
+    <h3>Games Favoritos</h3>
+    <ol>
+        <li>PlayStation2</li>
+        <ul type="square">
+            <li>God Of War: 1</li>
+            <li>God Of War: 2</li>
+            <li>GTA</li>
+            <li>Dragon Ball Budokai Tenkaichi 3</li>
+            <li>Resident Evil</li>
+            <li>Downhill Domination</li>
+            <li>Need for Speed: Underground</li>
+            <li>Need for Speed Most Wanted</li>
+            <li>Midnight Club 3: DUB Edition</li>
+            <li>Crash Nitro Kart</li>
+            <li>Crash Twinsanity</li>
+            <li>Mortal Kombat: Shaolin Monks</li>
+            <li>Black</li>
+            <li>Medal of Honor Frontline</li>
+            <li>Call of Duty: Finest Hour</li>
+            <li>Bomba Patch</li>
+            <li>PES</li>
+            <li>MTX Mototrax</li>
+            <li>Ghostbusters: The Video Game</li>
+        </ul>
+        <li>PC</li>
+        <ul type="square">
+            <li>PlayerUnknown's Battlegrounds</li>
+            <li>GTA5</li>
+            <li>God of War: 4</li>
+            <li>Red Dead Redemption 2</li>
+            <li>Call of Duty: Warzone</li>
+            <li>Counter-Strike: 1.6</li>
+            <li>Counter-Strike: Global Offensive</li>
+            <li>Valorant</li>
+        </ul>
+    </ol>
+    <p>No caso acima juntamos listas odenadas com listas não ordenadas uma dentro da outra igual no exemplo anterior.</p>
+    <P>Neste caso ficou assim:</P>
+    <pre>
+     <code>
+        &lt;ol&gt;
+            &lt;li&gt;&lt;/li&gt;
+            &lt;ul type="square"&gt;
+                &lt;li&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt; 
+            &lt;li&gt;&lt;/li&gt;
+            &lt;ul type="square"&gt;
+                &lt;li&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;  
+        &lt;/ol&gt;  
+     </code>
+    </pre>
+    <h2>Lista de Definiçôes</h2>
+    <p>Lista de definições é como se fosse um dicionario, então adicionamos um termo e a definição dele.</p>
+    <p>Exemplo:</p>
+    <br>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação de texto para criação de site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagm de marcação de design para criação de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Liguagem de programação de interatividade de um site.</dd>
+    </dl>
+    <br>
+    <p>No exemplo acima usamos a tag <strong>DL</strong> e dentro dessa tag temos o parâmetro <strong>DT</strong> que significa "termo" <br>
+    e também temos o <strong>DD</strong> que significa "descrição" como por exemplo:</p>
+    <pre>
+     <code>
+        &lt;dl&gt;
+            &lt;dt&gt;&lt;/dt&gt;
+            &lt;dd&gt;&lt;/dd&gt;   
+        &lt;/dl&gt;
+     </code>
+    </pre>
 </body>
 </html>
